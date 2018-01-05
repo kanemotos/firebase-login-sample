@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'LineLogin-iOS' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for LineLogin-iOS
+  pod 'LineSDK'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'PromiseKit'
+  pod 'SVProgressHUD'
+
+  target 'LineLogin-iOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'LineLogin-iOSUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

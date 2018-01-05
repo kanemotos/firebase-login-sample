@@ -1,0 +1,13 @@
+<main>
+
+  <div *ngIf="afAuth.authState | async; let user; else showLogin">
+    <h1>Hello {{user.displayName}}!</h1>
+    <button (click)="logout()">Logout</button>
+  </div>
+  <ng-template #showLogin>
+    <a (click)="loginWithLine()">
+      <img src="../../../assets/image/btn_login_base.png">
+    </a>
+  </ng-template>
+
+</main>
